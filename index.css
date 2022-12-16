@@ -94,60 +94,48 @@ h1 {
 
 .cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
 }
 
 .card {
     position: relative;
-    margin: 20px 10px;
-    padding: 12px;
-    width: 260px;
-    height: 380px;
+    margin: 40px 5px;
+    padding: 20px;
+    width: 240px;
+    height: 360px;
     background-color: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    border-radius: 30px;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .card-image {
     position: relative;
     width: 100%;
     height: 75%;
-    border-radius: 10px 10px 0 0;
-    transition: all .1s;
+    border-radius: 15px 15px 0 0;
+    /* transition: all .1s; */
 }
-
 .card:nth-of-type(1) .card-image {
     background: url('Projects-image/Project1.png') no-repeat center center;
     background-size: cover;
 }
 .card:nth-of-type(2) .card-image {
-    background-color: #ddd;
+    background-color: #eee;
     background-size: cover;
 }
 .card:nth-of-type(3) .card-image {
-    background-color: #ddd;
+    background-color: #eee;
     background-size: cover;
 }
 
 .card-image:hover {
     transform: scale(0.98);
-}
-
-.card-image::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px 10px 0 0;
-    transition: all .2s;
-}
-
-.card-image:hover::after {
-    backdrop-filter: blur(1px);
 }
 
 .card-description {
@@ -159,6 +147,13 @@ h1 {
     margin-bottom: 5px;
     font-size: 1.5rem;
     letter-spacing: .5rem;
+    color: rgb(50, 100, 200);
+}
+.card:nth-of-type(2) .card-description h3 {
+    color: rgb(250, 150, 50);
+}
+.card:nth-of-type(3) .card-description h3 {
+    color: rgb(100, 200, 200);
 }
 
 .card-description p {
