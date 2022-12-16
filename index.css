@@ -128,7 +128,7 @@ h1 {
 .card/*:nth-of-type(1)*/:hover {
     border-top: 2px solid rgb(100, 100, 255);
     border-left: 2px solid rgb(0, 0, 255);
-    box-shadow: 4px 4px 0 rgba(0, 0, 255, 1), 8px 8px 0 rgba(0, 0, 255, 0.8), 12px 12px 0 rgba(0, 0, 255, 0.6), 16px 16px 0 rgba(0, 0, 255, 0.4), 20px 20px 0 rgba(0, 0, 255, 0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 255, 1), 10px 10px 0 rgba(0, 0, 255, 0.7), 15px 15px 0 rgba(0, 0, 255, 0.4), 20px 20px 0 rgba(0, 0, 255, 0.1);
 }
 
 .card-image {
