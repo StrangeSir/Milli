@@ -113,17 +113,22 @@ h1 {
 
 .card {
     position: relative;
-    margin: 40px 5px;
+    margin: 40px 15px;
     padding: 20px;
     width: 240px;
     height: 360px;
     background-color: #fff;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
+    transition: all .5s;
 }
 
-.card:hover {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+.card/*:nth-of-type(1)*/:hover {
+    border-top: 2px solid rgb(100, 100, 255);
+    border-left: 2px solid rgb(0, 0, 255);
+    box-shadow: 4px 4px 0 rgba(0, 0, 255, 1), 8px 8px 0 rgba(0, 0, 255, 0.8), 12px 12px 0 rgba(0, 0, 255, 0.6), 16px 16px 0 rgba(0, 0, 255, 0.4), 20px 20px 0 rgba(0, 0, 255, 0.2);
 }
 
 .card-image {
@@ -131,7 +136,6 @@ h1 {
     width: 100%;
     height: 75%;
     border-radius: 15px 15px 0 0;
-    /* transition: all .1s; */
 }
 .card:nth-of-type(1) .card-image {
     background: url('Projects-image/Project1.png') no-repeat center center;
@@ -144,10 +148,6 @@ h1 {
 .card:nth-of-type(3) .card-image {
     background-color: #eee;
     background-size: cover;
-}
-
-.card-image:hover {
-    transform: scale(0.98);
 }
 
 .card-description {
