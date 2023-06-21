@@ -2,3 +2,8 @@
     font-family: 'SmileySans-Oblique';
     src: url(SmileySans-Oblique.ttf);
 }
+
+@font-face {
+    font-family: Herculanum;
+    src: url(Herculanum.ttf);
+}
