@@ -83,6 +83,7 @@ header .WebLogo {
 .main .About {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 100px 0;
     width: 100%;
 }
@@ -93,11 +94,12 @@ header .WebLogo {
 }
 
 .About .intro h3 {
-    line-height: 2.4;
+    margin: 20px 0;
     font-size: 2rem;
 }
 
 .About .intro p {
+    margin: 0 0 10px 0;
     line-height: 1.4;
     font-size: 1.2rem;
     letter-spacing: .1rem;
