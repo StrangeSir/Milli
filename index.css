@@ -11,7 +11,6 @@ html {
 body {
     border: 5px solid #000;
     border-radius: 1px;
-    overflow-x: hidden;
 }
 
 a {
@@ -54,138 +53,64 @@ header {
     margin: 0;
 }
 
-.toggle:hover .bar:nth-of-type(2) {
+input[id='Menu']:checked~header .toggle .bar:nth-of-type(2), .toggle:hover .bar:nth-of-type(2) {
     width: 80%;
 }
-
-.toggle:hover .bar:nth-of-type(3) {
+input[id='Menu']:checked ~ header .toggle .bar:nth-of-type(3), .toggle:hover .bar:nth-of-type(3) {
     width: 60%;
 }
 
-input[id='Menu']:checked ~ header .toggle .bar:nth-of-type(2) {
-    width: 80%;
-}
-
-input[id='Menu']:checked ~ header .toggle .bar:nth-of-type(3) {
-    width: 60%;
-}
-
-header h1 {
+header a {
     font-size: 1.8rem;
     font-family: Herculanum;
     transform: translate(0, 12px);
     user-select: none;
 }
 
-input[id='Menu']:checked ~ .Menu {
-    height: 700px;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-}
-input[id='Menu']:checked ~ .Menu a {
-    opacity: 1;
-}
-
-
-.content {
-    margin: 0 5%;
-    width: 90%;
-}
-
-.content .title {
-    width: 100%;
-    line-height: 1.6;
-    word-spacing: .2rem;
+.main .title h1 {
+    margin: 40px 0 20px 0;
     text-align: center;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    color: #000;
 }
 
-.content .title h1 {
-    font-size: 3rem;
-}
-.content .title p {
-    font-size: 1.6rem;
-}
-
-.image {
-    margin: 60px 0;
-    width: 100%;
-    height: 60vw;
-    background: url(images/desert.png) no-repeat center center;
-    background-size: cover;
-}
-
-
-
-/* .Projects {
-    width: 100%;
-}
-
-.cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.card {
-    position: relative;
-    margin: 40px 15px;
-    padding: 20px;
-    width: 240px;
-    height: 360px;
-    background-color: #fff;
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
-    transition: all .5s;
-}
-
-.card:hover {
-    border-top: 2px solid rgb(100, 100, 255);
-    border-left: 2px solid rgb(0, 0, 255);
-    box-shadow: 5px 5px 0 rgba(0, 0, 255, 1), 10px 10px 0 rgba(0, 0, 255, 0.7), 15px 15px 0 rgba(0, 0, 255, 0.4), 20px 20px 0 rgba(0, 0, 255, 0.1);
-}
-
-.card-image {
-    position: relative;
-    width: 100%;
-    height: 75%;
-    border-radius: 15px 15px 0 0;
-}
-.card:nth-of-type(1) .card-image {
-    background: url('Projects-image/Project1.png') no-repeat center center;
-    background-size: cover;
-}
-.card:nth-of-type(2) .card-image {
-    background-color: #eee;
-    background-size: cover;
-}
-.card:nth-of-type(3) .card-image {
-    background-color: #eee;
-    background-size: cover;
-}
-
-.card-description {
-    padding: 10px 4px;
-    width: 100%;
-}
-
-.card-description h3 {
-    margin-bottom: 5px;
-    font-size: 1.5rem;
-    letter-spacing: .5rem;
-    color: rgb(50, 100, 200);
-}
-.card:nth-of-type(2) .card-description h3 {
-    color: rgb(250, 150, 50);
-}
-.card:nth-of-type(3) .card-description h3 {
-    color: rgb(100, 200, 200);
-}
-
-.card-description p {
+.main .title h2 {
+    text-align: center;
     font-size: 1rem;
-    color: rgba(0, 0, 0, 0.6);
-    letter-spacing: 1rem;
-} */
+    letter-spacing: .4rem;
+    word-spacing: .2rem;
+    color: #000;
+}
+
+.main .About {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    width: 100%;
+}
+
+.About .intro {
+    margin: 10px;
+    width: 460px;
+}
+
+.About .intro h3 {
+    line-height: 2.4;
+    font-size: 2rem;
+}
+
+.About .intro p {
+    line-height: 1.4;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+}
+
+.About .head {
+    margin: 10px;
+}
+
+.About .head img {
+    width: 200px;
+    border-radius: 40px;
+}
