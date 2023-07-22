@@ -1,6 +1,6 @@
 html {
     font-style: 16px;
-    /* font-family: 'SmileySans-Oblique'; */
+    font-family: 'SmileySans-Oblique';
 }
 
 * {
@@ -65,56 +65,37 @@ header .WebLogo {
 }
 
 .main .title h1 {
-    margin: 80px 0 10px 0;
+    margin: 100px 0 20px 0;
+    background-image: linear-gradient(to right, #000, #000, transparent);
+    background-size: 200% 100%;
+    background-position-x: 200%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
     text-align: center;
-    font-size: 4rem;
-    letter-spacing: .2rem;
-    color: #000;
+    font-size: 7.6rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    opacity: 0;
+    animation: textFillUp 4s ease-in-out forwards;
 }
 
-.main .title h2 {
-    text-align: center;
-    font-size: 1rem;
-    letter-spacing: .32rem;
-    word-spacing: .2rem;
-    color: #000;
+.main .title h1 span:nth-of-type(3) {
+    white-space: nowrap;
 }
 
-.main .About {
-    display: flex;
-    justify-content: center;
-    margin: 100px 0;
-    width: 100%;
-}
-
-.About .intro {
-    flex-shrink: 0;
-    margin: 10px;
-    width: 460px;
-}
-
-.About .intro h3 {
-    margin: 20px 0;
-    font-size: 2rem;
-}
-
-.About .intro p {
-    margin: 0 0 10px 0;
-    line-height: 1.4;
-    font-size: 1.2rem;
-    letter-spacing: .1rem;
-}
-
-.About .intro p a {
-    color: #617172;
-    text-decoration: none;
-}
-
-.About .head {
-    margin: 10px;
-}
-
-.About .head img {
-    width: 200px;
-    border-radius: 40px;
+@keyframes textFillUp {
+    0% {
+        background-position-x: 200%;
+        opacity: 0
+    }
+    15% {
+        opacity: 1;
+    }
+    100% {
+        background-position-x: 0%;
+        opacity: 1
+    }
 }
