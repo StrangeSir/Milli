@@ -37,6 +37,10 @@
         document.write(`高:${window.innerHeight}`);
         document.write('<br>');
         document.write(`宽:${window.innerWidth}`);
+
+        window.onload = function() {
+            document.querySelector('.title h1').style.animation = 'textFillUp 4s ease-in-out forwards';
+        }
     </script>
 </body>
 

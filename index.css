@@ -79,7 +79,6 @@ header .WebLogo {
     color: transparent;
     -webkit-text-stroke: 1px #000;
     opacity: 0;
-    animation: textFillUp 4s ease-in-out forwards;
 }
 
 .main .title h1 span:nth-of-type(3) {
@@ -91,7 +90,7 @@ header .WebLogo {
         background-position-x: 200%;
         opacity: 0
     }
-    15% {
+    25% {
         opacity: 1;
     }
     100% {
